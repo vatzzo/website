@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+$color1: #2e3440; //dark-blue
+$color2: #931867; //crimson
+$color3: #698c88; //olive
+$color4: #d0d0d0; //grey
+$color5: #262626; //black
+$color6: #ffffff; //white
+
+@mixin flex($direction, $justify, $alignment) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $alignment;
+}
+
+@mixin setFont($size, $color, $type, $letterSpacing) {
+    font-size: $size;
+    color: $color;
+    text-transform: $type;
+    letter-spacing: $letterSpacing;
+}
+
+//global
+html {
+    font-size: 16px;
+}
+
+//headers
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1350px), (max-height: 700px) and (orientation: landscape){
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 900px), (max-height: 550px) and (orientation: landscape) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px), (max-height: 400px) and (orientation: landscape) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    position: absolute;
+    top: 5vh;
+    left: 80%;
+    @include setFont(2rem, $color4, capitalize, 0.3rem);
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        visibility: hidden;
+    }
+}

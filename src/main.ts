@@ -10,3 +10,7 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+if(window.innerHeight > window.innerWidth) {
+  alert('Responsive website will be delivered within few days.');
+}
