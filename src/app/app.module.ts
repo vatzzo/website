@@ -7,6 +7,11 @@ import { InfoComponent } from './info/info.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ExpoComponent } from './expo/expo.component';
+import { HomeMobileComponent } from './home-mobile/home-mobile.component';
+import { InfoMobileComponent } from './info-mobile/info-mobile.component';
+import { PortfolioMobileComponent } from './portfolio-mobile/portfolio-mobile.component';
+import { ExpoMobileComponent } from './expo-mobile/expo-mobile.component';
+import { ContactMobileComponent } from './contact-mobile/contact-mobile.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { ExpoComponent } from './expo/expo.component';
     InfoComponent,
     PortfolioComponent,
     ContactComponent,
-    ExpoComponent
+    ExpoComponent,
+    HomeMobileComponent,
+    InfoMobileComponent,
+    PortfolioMobileComponent,
+    ExpoMobileComponent,
+    ContactMobileComponent
   ],
   imports: [
     BrowserModule

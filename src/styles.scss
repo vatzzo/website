@@ -85,8 +85,18 @@ body {
     @include setFont(2rem, $color4, capitalize, 0.3rem);
 }
 
+.for-mobile {
+    display: none;
+}
+
 @media screen and (orientation: portrait) {
-    body {
-        visibility: hidden;
+    .for-landscape {
+        display: none;
+    }
+
+    .for-mobile {
+        display: block;
     }
 }
+
+

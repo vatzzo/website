@@ -1,0 +1,43 @@
+@import '../../styles.scss';
+
+.home-mobile {
+    @include flex(column, center, center);
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(155deg, $color1 60%, $color3 30%);
+    overflow-y: hidden;
+    // background-color: $color1;
+
+    img {
+        display: block;
+        height: auto;
+        width: 45%;
+        border: solid 8px $color2;
+        border-radius: 50%;
+    }
+
+    .info {
+        margin-top: 6vh;
+        .name {
+            @include setFont(6rem, $color6, capitalize, 0);
+        }
+        .profession {
+            @include setFont(3rem, $color6, capitalize, 0);
+        }
+        .contact {
+            margin-top: 2rem;
+            width: 50%;
+            height: auto;
+            @include setFont(3rem, $color6, capitalize, 0);
+            background-color: $color2;
+            border: solid 2px $color4;
+            border-radius: 8px;
+            padding: 1px;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.03);
+                transition: transform 0.3s ease-in;
+            }
+        }
+    }
+}

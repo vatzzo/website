@@ -18,15 +18,16 @@ export class AppComponent {
   }
 
   showNavOptions() {
-    let optionsActive = document.querySelector('.nav-bar-active-container');
-    optionsActive.classList.toggle('nav-bar-active-show');
+    let optionsActive = document.querySelector('.for-mobile nav');
+    optionsActive.classList.toggle('nav-active');
   }
 
   scrollToPosition($element): void {
-    let tak = document.querySelector('.nav-bar-active-show');
-    if(tak) {
-      tak.classList.remove('nav-bar-active-show');
-    }
+    let tak = document.querySelector('.nav-mobile');
+    tak.classList.remove('nav-active');
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
+
+
+
 }

@@ -1,0 +1,8 @@
+@import '../../styles.scss';
+.portfolio-mobile {
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+    background-color: $color3;
+    border-bottom: dotted 10px $color2;
+}

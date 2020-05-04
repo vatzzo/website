@@ -1,0 +1,9 @@
+<div class="expo">
+    <div *ngFor="let title of title; let i = index" class="expo-element"> 
+      <h2> {{ title }}</h2>
+      <p class="expo-description">
+        {{ description[i] }}
+      </p>
+      <img [src]="images[i]" class="expo-image"/>
+    </div>
+</div>

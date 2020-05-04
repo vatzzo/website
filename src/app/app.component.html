@@ -1,36 +1,57 @@
-<nav (scroll)="onScollChangeNav()">
-    <ul class="nav-bar">
-      <li (click)="scrollToPosition(target1)">home</li>
-      <li (click)="scrollToPosition(target2)">info</li>
-      <li (click)="scrollToPosition(target3)">portfolio</li>
-      <li (click)="scrollToPosition(target4)">contact</li>
-    </ul>
-    
-    <div (click)="showNavOptions()"class="burger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-
-    <div class="nav-bar-active-container">
-      <ul class="nav-bar-active">
+<div class="for-landscape">
+  
+  <nav (scroll)="onScollChangeNav()">
+      <ul class="nav-bar">
         <li (click)="scrollToPosition(target1)">home</li>
         <li (click)="scrollToPosition(target2)">info</li>
         <li (click)="scrollToPosition(target3)">portfolio</li>
         <li (click)="scrollToPosition(target4)">contact</li>
       </ul>
+  </nav>
+
+  <div #target1></div>
+  <app-home></app-home>
+  <div #target2></div>
+  <app-info></app-info>
+  <div #target3></div>
+  <app-portfolio></app-portfolio>
+  <div #target4></div>
+  <app-contact></app-contact>
+
+  <footer>
+      <p>2020 MATEUSZ ŁATA. ALL RIGHTS RESERVED.</p>
+  </footer>
+</div>
+
+<div class="for-mobile">
+
+    <nav class="nav-mobile">
+      <ul>
+        <li (click)="scrollToPosition(target5)">Home</li>
+        <li (click)="scrollToPosition(target6)">Info</li>
+        <li (click)="scrollToPosition(target7)">Portfolio</li>
+        <li (click)="scrollToPosition(target8)">Contact</li>
+      </ul>
+    </nav>
+
+    <div (click)="showNavOptions()" class="burger-mobile">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
 
-</nav>
+  <div #target5></div>
+  <app-home-mobile></app-home-mobile>
+  <div #target6></div>
+  <app-info-mobile></app-info-mobile>
+  <div #target7></div>
+  <app-portfolio-mobile></app-portfolio-mobile>
+  <div #target8></div>
+  <app-contact-mobile></app-contact-mobile>
 
-<div #target1></div>
-<app-home></app-home>
-<div #target2></div>
-<app-info></app-info>
-<div #target3></div>
-<app-portfolio></app-portfolio>
-<div #target4></div>
-<app-contact></app-contact>
-<footer>
+  <footer>
     <p>2020 MATEUSZ ŁATA. ALL RIGHTS RESERVED.</p>
-</footer>
+  </footer>
+
+</div>
+

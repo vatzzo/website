@@ -1,0 +1,32 @@
+@import '../../styles.scss';
+.contact-mobile {
+    @include flex(row, center, center);
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(155deg, $color1 60%, $color2 30%);
+    overflow-y: hidden;
+    color: $color6;
+
+    .contact-images {
+        border-left: solid 5px $color6;
+        width: 30%;
+        height: 60%;
+        @include flex(column, space-evenly, center);
+        img {
+            width: 20%;
+            height: auto;
+        }
+    }
+
+    .contact-desc {
+        width: 30%;
+        height: 60%;
+        @include flex(column, space-evenly, flex-start);
+    }
+
+    .contact-values {
+        width: 30%;
+        height: 60%;
+        @include flex(column, space-evenly, flex-start);
+    }
+}

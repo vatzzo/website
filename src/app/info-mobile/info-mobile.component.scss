@@ -1,0 +1,58 @@
+@import '../../styles.scss';
+
+.info-mobile-page {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient($color6, $color4);
+    border-top: dotted 10px $color2;
+    border-bottom: dotted 10px $color2;
+}
+
+.container-info {
+    width: 100vw;
+    height: 100vh;
+    @include flex(column, space-evenly, center);
+
+    .element {
+        width: 80%;
+        height: 100%;
+        @include flex(column, center, center);
+
+        .info-element-header {
+            width: 100%;
+            @include flex(row, center, center);
+
+            h1 {
+                background-color: $color2;
+                padding: 1rem;
+                color: $color6;
+                margin-bottom: 2vh;
+            }
+
+            img {
+                margin-right: 2vw;
+                width: 12%;
+            }
+
+        }
+
+        .aling-left{
+            .info-element-description {
+                @include flex(column, center, flex-start);
+                h2 {
+                    text-decoration: underline;
+                    text-decoration-color: $color2;
+                }
+            }
+        }
+            .info-element-images {
+                @include flex(row, center, flex-start);
+                img {
+                    width: 10%;
+                    height: auto;
+                }
+            }
+    }
+       
+}
+
