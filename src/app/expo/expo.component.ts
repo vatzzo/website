@@ -18,9 +18,9 @@ export class ExpoComponent implements OnInit {
     "A website that I created to store items of information associated with my projects and myslef. All the present and future work will be provide in here."
   ];
   images = [
-    "../../assets/Portfolio/word_beast.png",
-    "../../assets/Portfolio/typing_game.png",
-    "../../assets/Portfolio/web_mat.png"
+    "assets/Portfolio/word_beast.png",
+    "assets/Portfolio/typing_game.png",
+    "assets/Portfolio/web_mat.png"
   ];
 
 }

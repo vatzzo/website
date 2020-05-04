@@ -20,8 +20,8 @@ export class ExpoMobileComponent implements OnInit {
   ];
   
   images = [
-    "../../assets/Portfolio/word_beast.png",
-    "../../assets/Portfolio/typing_game.png",
-    "../../assets/Portfolio/web_mat.png"
+    "assets/Portfolio/word_beast.png",
+    "assets/Portfolio/typing_game.png",
+    "assets/Portfolio/web_mat.png"
   ];
 }
