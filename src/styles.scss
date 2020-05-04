@@ -60,6 +60,29 @@ p {
     }
 }
 
+@media screen and (max-width: 450px) and (orientation: portrait) {
+    html {
+        font-size: 8px;
+    }
+
+        //headers
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 800px) and (orientation: portrait) {
     html {
         font-size: 12px;
